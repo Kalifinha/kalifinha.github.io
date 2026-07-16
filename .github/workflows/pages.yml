@@ -31,9 +31,9 @@ jobs:
           text = html.read_text(encoding='utf-8')
           patched = text
           if a:
-              patched = patched.replace('<!-- 510f0563aba77cb15d518f4242 -->', a)
+              patched = patched.replace('<!-- 90981b734ad07a8e04e0519ebe -->', a)
           if b:
-              patched = patched.replace('<!--  -->', b)
+              patched = patched.replace('<!-- 048e34e807ea8ce50bfaa901ffd1 -->', b)
           if patched == text and (a or b):
               sys.exit(1)
           if patched != text:
